@@ -11,7 +11,7 @@
 
 * {
   margin: 0;
-  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 img,
@@ -71,11 +71,7 @@ button:focus {
   cursor: pointer;
 }
 
-
-
-
-
-a.icon-button{
+a.icon-button {
   display: inline-flex;
   font-size: .875rem;
   background: linear-gradient(-90deg, #050adc, #f20000);
@@ -88,7 +84,6 @@ a.icon-button{
   transition: all .2s ease;
 }
 
-
 a.icon-button>div {
   width: 100%;
   display: flex;
@@ -100,23 +95,19 @@ a.icon-button>div {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing: .01562rem;
+  letter-spacing: .0156rem;
   line-height: 1.125rem;
   text-align: center;
   text-decoration: none;
   transition: all .2s ease;
 }
 
-
 a.icon-button:hover {
   cursor: pointer;
   text-decoration: none;
-  -webkit-transform: scale(1.04);
   transform: scale(1.04);
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .35);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .35);
+  box-shadow: 0 4px 10px 0 rgba(0 0 0 / 35%);
 }
-
 
 a.icon-button>div>span {
   display: flex;
@@ -129,7 +120,6 @@ a.icon-button>div>span {
   background-color: #172fe6;
 }
 
-
 a.icon-button>div>span>i {
   content: "";
   display: block;
@@ -141,12 +131,12 @@ a.icon-button>div>span>i {
   transform: rotate(315deg);
 }
 
-/* Primary variant of icon button*/
+/* Primary variant of icon button */
 
 a.icon-button.primary {
   display: inline-flex;
   min-width: 250px;
-  background:#172fe6;
+  background: #172fe6;
   color: #172fe6;
   text-decoration: none;
 }

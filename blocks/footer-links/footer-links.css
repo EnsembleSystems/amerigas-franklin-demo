@@ -63,5 +63,5 @@
 
 .footer-links-container>a.link-download-icon {
     padding-right: 20px;
-    background: transparent url(../../icons/download-icon.svg) 100% no-repeat;
+    background: transparent url("../../icons/download-icon.svg") 100% no-repeat;
 }

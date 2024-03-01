@@ -25,7 +25,8 @@
 }
 
 .footer-socials-text-container {
-    padding: 0 30px 0 0
+    padding: 0 30px 0 0;
+    color: #2d373e;
 }
 
 
@@ -55,8 +56,4 @@
 
 .footer-socials-icons-container>a:hover img {
     filter: brightness(0) invert(1);
-}
-
-.footer-socials-text-container {
-    color: #2d373e;
 }
