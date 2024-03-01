@@ -1,0 +1,27 @@
+/* Footer Banner styling */
+
+.footer-banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    background: linear-gradient(-45deg, #050adc, #330075 38%, #c4022b);
+}
+
+.footer-banner-container > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-banner >h2 {
+    max-width: 1260px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 300;
+}
