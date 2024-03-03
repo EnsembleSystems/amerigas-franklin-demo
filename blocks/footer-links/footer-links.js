@@ -12,7 +12,7 @@ export default async function decorate(block) {
 
     const links = elem.querySelectorAll('li a');
     [...links].forEach((link) => {
-      if (link.href.includes('.pdf')) {
+      if (link?.nextSibling?.className.includes('icon-download-icon')) {
         link.classList.add('link-download-icon');
       }
     });
@@ -33,7 +33,8 @@ export default async function decorate(block) {
     });
 
     linkContainer.append(...links);
+    linkContainer.append(...buttons);
     linkContainer.className = 'footer-links-container';
-    elem.replaceChildren(...header, linkContainer, ...buttons);
+    elem.replaceChildren(...header, linkContainer);
   });
 }
