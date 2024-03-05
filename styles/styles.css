@@ -1,4 +1,3 @@
-
 :root {
   /* colors */
   --background-color: white;
@@ -12,14 +11,20 @@
 
 * {
   margin: 0;
+  font-family: "Helvetica Neue light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 0;
 }
 
@@ -48,7 +53,8 @@ a:hover {
 }
 
 /* buttons */
-a.button:any-link, button {
+a.button:any-link,
+button {
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
@@ -58,6 +64,96 @@ a.button:any-link, button {
   text-overflow: ellipsis;
 }
 
-a.button:hover, a.button:focus, button:hover, button:focus  {
+a.button:hover,
+a.button:focus,
+button:hover,
+button:focus {
   cursor: pointer;
+}
+
+a.icon-button {
+  display: inline-flex;
+  height: fit-content;
+  min-width: 250px;
+  background: linear-gradient(-90deg, #050adc, #f20000);
+  box-shadow: none;
+  border: none;
+  padding: 0.125rem;
+  border-radius: 5px;
+  text-decoration: underline;
+  transition: all .2s ease;
+  box-sizing: border-box;
+}
+
+a.icon-button>div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px 5px 15px;
+  background-color: white;
+  border-radius: 4px;
+  font-size: .875rem;
+  font-weight: 500;
+  letter-spacing: .0156rem;
+  line-height: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+a.icon-button:hover {
+  cursor: pointer;
+  text-decoration: none;
+  transform: scale(1.04);
+  box-shadow: 0 4px 10px 0 rgba(0 0 0 / 35%);
+}
+
+a.icon-button>div>span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 0.9375rem;
+  border-radius: 4px;
+  background-color: #172fe6;
+}
+
+a.icon-button>div>span>i {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  margin-right: 0.3125rem;
+  transform: rotate(315deg);
+}
+
+/* Primary variant of icon button */
+
+a.icon-button.primary {
+  display: inline-flex;
+  min-width: 250px;
+  background: #172fe6;
+  color: #172fe6;
+  text-decoration: none;
+}
+
+a.icon-button.primary>div {
+  text-decoration: none;
+  font-size: 1rem
+
+}
+
+a.icon-button.primary>div>span {
+  width: 45px;
+  height: 45px;
+}
+
+a.icon-button.primary>div>span>i {
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
 }
