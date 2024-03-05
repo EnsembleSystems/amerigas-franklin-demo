@@ -1,6 +1,6 @@
 /* Footer Banner styling */
 
-.footer-banner-container {
+.banner-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,14 +9,14 @@
     background: linear-gradient(-45deg, #050adc, #330075 38%, #c4022b);
 }
 
-.footer-banner-container > div > div {
+.banner-container > div > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.footer-banner >h2 {
+.banner >h2 {
     max-width: 1260px;
     margin-bottom: 25px;
     color: white;
@@ -24,4 +24,14 @@
     line-height: 3rem;
     text-align: center;
     font-weight: 300;
+}
+
+
+.banner-buttons-container{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-buttons-container > a {
+    margin: 0 25px;
 }
