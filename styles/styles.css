@@ -34,6 +34,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  overflow: scroll;
 }
 
 body.appear {
@@ -42,6 +43,14 @@ body.appear {
 
 header {
   height: var(--nav-height);
+  position: relative;
+  z-index: 100;
+}
+
+main >div:nth-last-child(2) {
+  background: linear-gradient(90deg, #d0988a, #b01841 50%, #4787bc);
+  margin-top: -115px;
+  padding-top: 115px
 }
 
 a:any-link {
