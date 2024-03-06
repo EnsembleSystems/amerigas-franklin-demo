@@ -49,8 +49,8 @@ header {
 
 main >div:nth-last-child(2) {
   background: linear-gradient(90deg, #d0988a, #b01841 50%, #4787bc);
-  margin-top: -115px;
-  padding-top: 115px
+  margin-top: -215px;
+  padding-top: 215px
 }
 
 a:any-link {
