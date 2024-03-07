@@ -37,6 +37,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar-primary-links>a {
@@ -55,6 +56,15 @@
 .navbar-primary-links>a:hover {
     font-weight: 700;
     color: #040066;
+}
+
+.navbar-primary-links>a::after{
+    display: block;
+    font-weight: 700;
+    visibility: hidden;
+    content: attr(pseudo-text);
+    height: 0;
+
 }
 
 .navbar-primary-links>:first-child {

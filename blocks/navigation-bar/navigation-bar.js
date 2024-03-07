@@ -6,6 +6,11 @@ export default async function decorate(block) {
   // Main navigation links
   const [primaryLinkSection, secondaryLinkSection] = block.children[0].getElementsByTagName('div');
   const navLinks = primaryLinkSection.getElementsByTagName('a');
+
+  [...navLinks].forEach((elem) => {
+    elem.setAttribute('pseudo-text', elem.innerText);
+  });
+
   const linkContainer = document.createElement('div');
   linkContainer.className = 'navbar-primary-links';
   linkContainer.append(...navLinks);
