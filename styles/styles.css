@@ -42,7 +42,6 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
   position: relative;
   z-index: 100;
 }

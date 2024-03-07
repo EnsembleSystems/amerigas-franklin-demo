@@ -28,20 +28,28 @@ export default async function decorate(block) {
     </g>
   </svg>`;
 
-  // Event listener to adjust svg pointer position
-  window.addEventListener('resize', () => {
+  const adjustNavmask = () => {
     const pointerMask = block.querySelector('.navbar-pointer-mask .pointer');
     const activeTab = block.querySelector('.navbar-primary-links>:first-child');
     const x = activeTab.getBoundingClientRect().left + activeTab.offsetWidth / 2
       - (pointerMask.getBoundingClientRect().width / 2);
     pointerMask.style.transform = `translate(${x}px,55px)`;
+  };
+
+  // Adjusts inital poiner position after navtabs are layed out
+  window.requestAnimationFrame(() => {
+    adjustNavmask();
   });
 
+  // Event listener to adjust svg pointer position when screen size changes
+  window.addEventListener('resize', () => {
+    adjustNavmask();
+  });
+
+  // Secondary links and buttons
   const secondaryLinks = secondaryLinkSection.getElementsByTagName('a');
   const searchIcon = secondaryLinkSection.querySelector('div > p span');
   searchIcon.className = 'search-btn';
-
-  // Create and style buttons
   const buttons = secondaryLinkSection.querySelectorAll('div > p a');
   buttons.forEach((elem) => {
     if (elem.className === ('button')) {
