@@ -35,9 +35,8 @@
 
 .navbar-primary-links {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    flex-flow: wrap
 }
 
 .navbar-primary-links>a {
@@ -58,7 +57,7 @@
     color: #040066;
 }
 
-.navbar-primary-links>a::after{
+.navbar-primary-links>a::after {
     display: block;
     font-weight: 700;
     visibility: hidden;
