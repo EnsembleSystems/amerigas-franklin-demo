@@ -42,9 +42,17 @@ export default async function decorate(block) {
   };
 
   // Adjusts inital poiner position after navtabs are layed out
-  window.requestAnimationFrame(() => {
-    adjustNavmask();
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutationRecord) => {
+      const navLink = mutationRecord.target.querySelector('.navbar-primary-links>:first-child');
+      if (navLink?.getBoundingClientRect().width > 0) {
+        adjustNavmask();
+        observer.disconnect();
+      }
+    });
   });
+
+  observer.observe(document, { childList: true, subtree: true });
 
   // Event listener to adjust svg pointer position when screen size changes
   window.addEventListener('resize', () => {
