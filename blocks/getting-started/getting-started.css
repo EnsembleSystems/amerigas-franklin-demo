@@ -1,0 +1,72 @@
+.getting-started-wrapper{
+    padding: 60px;
+}
+
+.getting-started {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.getting-started>div {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.getting-started-header-container {
+    flex-basis: 30%;
+}
+
+.getting-started-header-container>h2 {
+    display: inline-flex;
+    position: relative;
+    margin: 0 0 1.5625rem;
+    padding: 0 0 1.25rem;
+    font-weight: 300;
+    color: #030066;
+    font-size: 40px;
+    line-height: 48px;
+    box-sizing: border-box;
+}
+
+.getting-started-header-container>h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, #050adc, #f20000);
+    height: 3px;
+    width: 65px;
+    box-sizing: border-box;
+}
+
+.getting-started-content-container {
+    flex-basis: 50%;
+    margin-left: auto;
+}
+
+.getting-started-content-container>p {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 30px;
+    color: #2d373e;
+}
+
+
+a.getting-started-cta {
+    text-decoration: none;
+    color: #030066;
+    min-width: 195px;
+    margin:5px;
+}
+
+a.getting-started-cta > div > span > i{
+    width: 10px;
+    height: 10px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    box-sizing: border-box;
+}

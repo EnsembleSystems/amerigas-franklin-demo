@@ -1,0 +1,113 @@
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(42px, 1fr) minmax(0, 78.75rem) minmax(42px, 1fr);
+    width: 100%;
+    background: linear-gradient(90deg, #ec4e27, #b01841 50%, #4787bc);
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #4787bc, #b01841 50%, #ec4e27);
+    animation: opacity-anim 6s ease-in-out -6s infinite alternate;
+}
+
+@keyframes opacity-anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-content-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column: 2/3;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.hero-content-details {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    width: 631px;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 125px 0 70px;
+}
+
+.hero-content-details>h2 {
+    padding: 0;
+    font-size: 42px;
+    line-height: 58px;
+    margin-bottom: 20px;
+    letter-spacing: normal;
+    color: #fff;
+    font-weight: 300;
+}
+
+.hero-content-details>p {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 22px 0 42px;
+    font-weight: 300;
+}
+
+.hero-content-image {
+    display: flex;
+    grid-column: 2 / 3;
+    justify-content: flex-end;
+    padding: 125.25px 10px 0;
+    z-index: 1;
+    height: 0;
+}
+
+.hero-content-image>picture>img {
+    max-width: 510px;
+    border-radius: 6px;
+    height: auto;
+    width: auto;
+    margin-bottom: -40px;
+    padding-top: 4px;
+}
+
+a.hero-btn {
+    width: fit-content;
+    background: #172fe6;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #172fe6;
+    min-width: auto;
+}
+
+a.hero-btn>div {
+    padding: 3px 3px 3px 13px;
+    justify-content: center;
+}
+
+a.hero-btn>div>span {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+a.hero-btn>div>span>i {
+    width: 10px;
+    height: 10px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-color: #172fe6;
+    box-sizing: border-box;
+}

@@ -25,5 +25,6 @@ export default async function decorate(block) {
   buttonsDiv.append(...bannerButtons);
   buttonsDiv.className = 'banner-buttons-container';
 
-  block.replaceChildren(bannerHeader, buttonsDiv);
+  block.children[0].className = 'banner-content';
+  block.children[0].replaceChildren(bannerHeader, buttonsDiv);
 }
