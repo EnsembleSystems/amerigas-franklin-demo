@@ -65,17 +65,13 @@ a.pointer-cta{
     line-height: 18.4px;
     padding: 4px 5px 4px 0
 }
-a.pointer-cta:after{
+
+a.pointer-cta::after{
     position: absolute;
-    top: -3px;
-    right: -3px;
-    bottom: -3px;
-    left: -3px;
+    inset: -3px;
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 5px 3px #172fe6;
     box-shadow: 0 0 5px 3px #172fe6;
     opacity: 0;
-    -webkit-transition: opacity .6s ease;
     transition: opacity .6s ease;
 }
 
