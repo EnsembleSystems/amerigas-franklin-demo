@@ -1,0 +1,88 @@
+.hero-diamond{
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(0, 78.75rem) minmax(20px, 1fr);
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(-45deg, #730154, #c50428 68%, #cc5c18);
+    clip-path: polygon(50% 98.75%, 100% 86.5%, 100% 0, 0 0, 0 86.5%);
+    padding-top:126px
+}
+
+
+.hero-diamond > div{
+    bottom: auto;
+    display: grid;
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    grid-column: 2 / 4;
+}
+
+
+.hero-diamond-text-container {
+    grid-column: 1 / 2;
+    padding: 0 60px 90px 0;
+    width: 630px;
+    box-sizing: border-box;
+}
+
+.hero-diamond-text-container > h2 {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 70px;
+    margin: 0 0 30px;
+    box-sizing: border-box;
+}
+
+.hero-diamond-text-container > p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 20px;
+    box-sizing: border-box;
+}
+
+.hero-diamond-image-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+    width: 50vw;
+    height: 100%;
+    position: relative;
+    padding-top: 56.875%;
+    box-sizing: border-box;
+}
+
+.hero-diamond-image-container img{
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+a.hero-diamond-cta > div > span{
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+a.hero-diamond-cta > div > span > i{
+    width: 13px;
+    height: 13px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    box-sizing: border-box;
+    margin-right: 6px;
+}
+
+
