@@ -5,10 +5,11 @@
 export default async function decorate(block) {
   const contentWrapper = block.children[0];
   contentWrapper.className = 'cards-col-container';
+  const childCount = contentWrapper.children.length;
 
   [...contentWrapper.children].forEach((elem) => {
     const colDiv = document.createElement('div');
-    colDiv.className = 'card-wrapper';
+    colDiv.className = `card-wrapper-${childCount}`;
 
     const card = document.createElement('a');
     card.className = 'card';
@@ -36,7 +37,12 @@ export default async function decorate(block) {
     buttonContainer.append(buttonIconContainer);
     buttonLink.append(buttonContainer);
 
-    cardTextContainer.append(title, text);
+    cardTextContainer.append(title);
+
+    if (!text.className.includes('button-container')) {
+      cardTextContainer.append(text);
+    }
+
     cardContentContainer.append(cardTextContainer, buttonLink);
     card.append(image, cardContentContainer);
     colDiv.append(card);
