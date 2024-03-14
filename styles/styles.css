@@ -14,6 +14,10 @@
   font-family: "Helvetica Neue light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+html {
+  overflow-y:scroll;
+}
+
 img,
 picture,
 video,
@@ -35,6 +39,7 @@ body {
   background-color: var(--background-color);
   display: none;
   overflow: scroll;
+  height: 100%;
 }
 
 body.appear {
@@ -44,12 +49,26 @@ body.appear {
 header {
   position: relative;
   z-index: 100;
+  min-height: 158px;
 }
 
-main >div:nth-last-child(2) {
-  background: linear-gradient(90deg, #d0988a, #b01841 50%, #4787bc);
-  margin-top: -215px;
-  padding-top: 215px
+main {
+  margin-top: -102px;
+}
+
+.default-content-wrapper {
+  padding: 60px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.default-content-wrapper>h2 {
+  font-size: 48px;
+  margin: 0 0 15px;
+  color: #030066;
+  font-weight: 300;
+  text-align: center;
+  line-height: 56px;
 }
 
 a:any-link {
@@ -153,7 +172,6 @@ a.icon-button.primary {
 a.icon-button.primary>div {
   text-decoration: none;
   font-size: 1rem
-
 }
 
 a.icon-button.primary>div>span {
