@@ -1,4 +1,4 @@
-.tiles-wrapper{
+.tiles-wrapper {
     padding: 60px 0;
 }
 
@@ -14,6 +14,11 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+.tiles div.tiles-content-wrapper:last-child {
+    margin: 0;
 }
 
 
@@ -43,7 +48,7 @@
     color: #2d373e;
     box-sizing: border-box;
     margin-top: 18px;
-    margin-bottom: 25px ;
+    margin-bottom: 25px;
 }
 
 .tile-col .tile-cta-container {
@@ -52,11 +57,11 @@
 
 }
 
-.tile-mar-right{
+.tile-mar-right {
     margin-right: 17px;
 }
 
-.tile-mar-left{
+.tile-mar-left {
     margin-left: 3px;
 }
 
@@ -66,7 +71,7 @@ a.tile-cta {
     ;
 }
 
-a.tile-cta > div > span > i{
+a.tile-cta>div>span>i {
     width: 10px;
     height: 10px;
     border-bottom-width: 1px;
