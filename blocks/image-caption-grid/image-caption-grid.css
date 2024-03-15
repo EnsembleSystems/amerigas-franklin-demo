@@ -1,0 +1,110 @@
+.image-caption-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.image-caption-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1260px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.image-caption-grid div.image-caption-row:first-child{
+    padding:60px 0;
+}
+
+.image-caption-grid div.image-caption-row:last-child{
+    padding:60px 0;
+}
+
+.image-caption-row>div {
+    flex-basis: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.image-caption-order-1 {
+    order: 1
+}
+
+.image-caption-order-0 {
+    order: 0
+}
+
+.image-caption-text>div {
+    padding-bottom: 30px;
+    line-height: 28px;
+}
+
+.image-caption-row>div:first-child {
+    padding-right: 10px;
+    margin-bottom: 40px
+}
+
+.image-caption-row>div:last-child {
+    padding-left: 10px;
+    margin-bottom: 40px
+}
+
+
+.image-caption-row>div.image-caption-order-1 {
+    padding: 0 0 0 10px;
+}
+
+.image-caption-row>div.image-caption-order-0 {
+    padding: 0 10px 0 0;
+}
+
+.image-caption-text h2 {
+    display: inline-flex;
+    position: relative;
+    margin: 0 0 25px;
+    padding: 0 0 20px;
+    font-weight: 300;
+    color: #030066;
+    box-sizing: border-box;
+    line-height: 48px;
+    font-size: 40px;
+}
+
+.image-caption-text h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, #050adc, #f20000);
+    height: 3px;
+    width: 65px;
+}
+
+
+.image-caption-text p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #2d373e;
+    box-sizing: border-box;
+    margin: 18px 0;
+}
+
+.image-caption-text-single p {
+    margin: 0;
+}
+
+.image-caption-text p>a {
+    color: #172fe6;
+    text-decoration: underline;
+}
+
+.image-caption-image img {
+    height: auto;
+}
+
+a.caption-cta {
+    margin: 35px 5px 5px;
+    text-decoration: none;
+}

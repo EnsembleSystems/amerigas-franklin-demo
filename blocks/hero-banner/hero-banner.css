@@ -1,0 +1,85 @@
+.hero-banner {
+    background: linear-gradient(90deg, #cc5c18, #c4022b 25%, #c50428 50%, #540064);
+    padding: 126px 0 40px;
+    box-sizing: border-box;
+    line-height: 18.4px;
+
+}
+
+.hero-banner-content-container {
+    color: #fff;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    line-height: 18.4px;
+}
+
+.hero-banner-breadcrumb{
+    padding-bottom: 5px;
+    line-height: 18.4px;
+}
+
+.hero-banner-breadcrumb> li{
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.hero-banner-breadcrumb >li >a{
+    color: white;
+    line-height: 24px;
+}
+
+.hero-banner-breadcrumb >li i{
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    line-height: 24px;
+}
+
+.hero-banner-breadcrumb > li i::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-left-color: #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top-color: #fff;
+    transform: rotate(315deg);
+    box-sizing: border-box;
+}
+
+.hero-banner-content-details > h2{
+    max-width: 834px;
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 70px;
+}
+
+.hero-banner-content-details > p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    max-width: 834px;
+}
+
+a.hero-banner-cta{
+    margin: 10px 0 20px;
+    border-radius: 5px
+}
+
+a.hero-banner-cta > div >span>i{
+    width: 13px;
+    height: 13px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    margin-right: 6px;
+    box-sizing: border-box;
+}
