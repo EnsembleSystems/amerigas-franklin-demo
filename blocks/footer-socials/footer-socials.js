@@ -22,4 +22,9 @@ export default async function decorate(block) {
 
   block.children[0].classList.add('footer-socials-content');
   block.children[0].replaceChildren(logoContainer, textContainer, iconsContainer);
+
+  const route = window.location.href;
+  if ((route.includes('about-propane') || (route.includes('home-propane-tanks')))) {
+    iconsContainer.classList.add('footer-socials-invisible');
+  }
 }

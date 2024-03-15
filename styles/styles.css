@@ -15,7 +15,7 @@
 }
 
 html {
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
 img,
@@ -38,7 +38,6 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
-  overflow: scroll;
   height: 100%;
 }
 
@@ -69,6 +68,15 @@ main {
   font-weight: 300;
   text-align: center;
   line-height: 56px;
+}
+
+.default-content-wrapper>h3 {
+  font-size: 40px;
+  margin: 0 0 15px;
+  color: #030066;
+  font-weight: 300;
+  text-align: center;
+  line-height: 48px;
 }
 
 a:any-link {
