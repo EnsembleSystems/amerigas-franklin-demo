@@ -36,6 +36,11 @@
     order: 0
 }
 
+.image-caption-text>div {
+    padding-bottom: 30px;
+    line-height: 28px;
+}
+
 .image-caption-row>div:first-child {
     padding-right: 10px;
     margin-bottom: 40px
@@ -53,11 +58,6 @@
 
 .image-caption-row>div.image-caption-order-0 {
     padding: 0 10px 0 0;
-}
-
-.image-caption-text>div {
-    padding-bottom: 30px;
-    line-height: 28px;
 }
 
 .image-caption-text h2 {
